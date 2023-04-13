@@ -8,7 +8,7 @@ const UserController = {
                     ["name","ASC"]
                 ]
         });
-            res.status(200).json({ data: users });
+            res.status(200).json(users);
         }catch(error){
             console.log(error);
             res.status(400).json({ message: "Erro ao listar os usuários" });
@@ -31,7 +31,7 @@ const UserController = {
         const { id } = req.params;
         try{
             const user = await User.findByPk(id);
-            res.status(200).json({ data: user });
+            res.status(200).json(user);
         }catch(error){
             console.log(error);
             res.status(400).json({ message: "Erro ao buscar usuário" });
