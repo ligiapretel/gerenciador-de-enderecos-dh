@@ -4,6 +4,7 @@ const UserController = {
     index: async (req,res)=>{
         try{
             const users = await User.findAll({
+                include: "addresses",
                 order:[
                     ["name","ASC"]
                 ]
