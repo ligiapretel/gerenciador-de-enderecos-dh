@@ -1,37 +1,34 @@
+import { useState, useEffect } from 'react';
 import './usersScreen.css';
 import Header from '../../components/Header';
 import UserCard from '../../components/UserCard';
+import api from '../../api/api';
 
-function UserScreen(){
-    const users = [
-        {
-            id: 1,
-            name: "Julia Soares",
-            email: "julia@email.com",
-        },
-        {
-            id: 2,
-            name: "Amanda Telles",
-            email: "amanda@email.com",
-        },
-        {
-            id: 3,
-            name: "Conceição Jatobá",
-            email: "conceicao@email.com",
-        },
-        {
-            id: 4,
-            name: "Fernanda Brasil",
-            email: "fernanda@email.com",
-        },
-    ]
+function UsersScreen(){
 
+    const [users, setUsers] = useState([]);
+
+    useEffect(()=>{
+        async function getUsers(){
+            const response = await api.get("/users");
+            setUsers(response.data);
+        };
+
+        getUsers();
+
+    },[])
+    
     return(
         <>
             <Header title="Usuários cadastrados"/>
-            <main className="mainUsersScreen">
+            <main>
                 {users.map(user=> (
-                    <UserCard id={user.id} name={user.name} email={user.email}/>
+                    <UserCard 
+                        id={user.id} 
+                        name={user.name} 
+                        email={user.email} 
+                        addresses={user.addresses}
+                    />
                 ))}
             </main>
         </>
@@ -39,4 +36,4 @@ function UserScreen(){
 
 }
 
-export default UserScreen;
+export default UsersScreen;

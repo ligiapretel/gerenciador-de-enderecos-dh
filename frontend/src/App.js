@@ -6,8 +6,8 @@ import AddressesScreen from './screens/AddressesScreen';
 function App() {
   
   return(
-    <UserRegisterScreen />
-    // <UsersScreen />
+    // <UserRegisterScreen />
+    <UsersScreen />
     // <AddressesScreen />
   );
 }
