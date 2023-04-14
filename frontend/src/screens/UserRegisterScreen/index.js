@@ -25,8 +25,8 @@ function UserRegisterScreen(){
     return (
       <>
         <Header title="Cadastro de usuário"/>        
-        <main>
-          <form onSubmit={handleSubmit}>
+        <main className="main-user-register">
+          <form onSubmit={handleSubmit} className="register-form">
             <label>Nome</label>
             <input 
               type="text" 

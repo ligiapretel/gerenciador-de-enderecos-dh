@@ -21,7 +21,7 @@ function UsersScreen(){
     return(
         <>
             <Header title="Usuários cadastrados"/>
-            <main>
+            <main className="main-users-screen">
                 {users.map(user=> (
                     <UserCard 
                         id={user.id} 

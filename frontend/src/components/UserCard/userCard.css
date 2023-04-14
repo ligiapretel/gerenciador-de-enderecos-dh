@@ -1,0 +1,43 @@
+.user-card{
+    background-color: #1b1b1b;
+    padding: 1rem;
+    margin: 0 0.5rem 1rem 0.5rem;
+    border-radius: 0.5rem;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-id{
+    font-size: 0.8rem;
+    color: #838383;
+    text-align: center;
+    background-color: #3b3b3b;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    margin-bottom: 0.5rem;
+    width: 60px;
+}
+
+.user-info{
+    margin-top: 0.5rem;
+}
+
+.container-user-addresses{
+    margin-top: 1rem;
+}
+
+.user-addresses{
+    font-size: 0.8rem;
+    background-color: #58224e;
+    border-radius: 0.5rem;
+    padding: 0.3rem 0.5rem;
+    margin: 0.8rem 0 1rem 0;
+    display: block;
+}
+
+.user-address-info{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
