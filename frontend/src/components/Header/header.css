@@ -12,16 +12,22 @@ header{
 
 .menu-item{
     text-decoration: none;
-    color: #fff;
+    color: #d6d6d6;
     padding: 0.9rem;
 }
 
 .menu-item:hover{
+    color: #fff;
     background-color: #2c0024;
     border-radius: 0.5rem;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 .title{
     margin: 1rem 0;
+}
+
+a.active {
+    color: #fff;
+    text-decoration: underline;
 }

@@ -34,3 +34,7 @@ button{
 button:hover{
     background-color: #65315b;
 }
+
+::selection {
+    background-color: #a54193;
+}

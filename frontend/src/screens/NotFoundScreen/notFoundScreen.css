@@ -1,0 +1,11 @@
+.main-not-found{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px
+}
+
+.img-not-found{
+    width: 400px;
+    margin-top: 50px;
+}
