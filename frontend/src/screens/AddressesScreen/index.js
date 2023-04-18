@@ -32,7 +32,8 @@ function AddressesScreen(){
             <Header title={"Endereços cadastrados"}/>
             <main>
                 {addresses.map(address=>(
-                    <AddressCard 
+                    <AddressCard
+                        key={address.id} 
                         id={address.id} 
                         postalCode={address.postalCode} 
                         street={address.street} 

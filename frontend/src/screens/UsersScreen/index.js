@@ -24,6 +24,7 @@ function UsersScreen(){
             <main className="main-users-screen">
                 {users.map(user=> (
                     <UserCard 
+                        key={user.id}
                         id={user.id} 
                         name={user.name} 
                         email={user.email} 

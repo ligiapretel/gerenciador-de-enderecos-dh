@@ -9,7 +9,7 @@ function UserCard({ id, name, email, addresses }){
             <div className="container-user-addresses">
                 <span className="user-addresses">Endereços</span>
                     {addresses.map(address=>(
-                        <div className="user-address-info">
+                        <div className="user-address-info" key={address.id}>
                             <span> CEP: {address.postal_code}</span>
                             <span> {address.street},</span>
                             <span> {address.house_number}</span>
