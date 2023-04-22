@@ -1,4 +1,5 @@
 import './userCard.css';
+import { Link } from 'react-router-dom';
 
 function UserCard({ id, name, email, addresses }){
     return(
@@ -7,7 +8,12 @@ function UserCard({ id, name, email, addresses }){
             <span className="user-info"> Nome: {name}</span>
             <span className="user-info"> Email: {email}</span>
             <div className="container-user-addresses">
-                <span className="user-addresses">Endereços</span>
+                <div className="container-title-address">
+                    <span className="user-addresses">Endereços</span>
+                    <Link to={"/enderecos-registro/"+id} className="add">
+                        <span>+</span>
+                    </Link>
+                </div>
                     {addresses.map(address=>(
                         <div className="user-address-info" key={address.id}>
                             <span> CEP: {address.postal_code}</span>

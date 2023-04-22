@@ -1,0 +1,16 @@
+.main-address-form{
+    display: flex;
+    justify-content: center;
+}
+
+.address-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 400px;
+    height: 450px;
+    background-color: #1b1b1b;
+    padding: 1.5rem;
+    margin: 100px 0;
+    border-radius: 0.5rem;
+}

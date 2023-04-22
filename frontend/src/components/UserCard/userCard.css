@@ -26,18 +26,41 @@
 .container-user-addresses{
     margin-top: 1rem;
 }
+.container-title-address{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.8rem 1rem 1rem 0;
+}
 
 .user-addresses{
     font-size: 0.8rem;
     background-color: #58224e;
     border-radius: 0.5rem;
     padding: 0.3rem 0.5rem;
-    margin: 0.8rem 0 1rem 0;
-    display: block;
+    display: flex;
+    width: 80%;
 }
 
 .user-address-info{
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
+}
+
+.add{
+    background-color: #58224e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    padding: 0 0 1px 1px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #d6d6d6;
+}
+
+.add:hover{
+    background-color: #65315b;
 }

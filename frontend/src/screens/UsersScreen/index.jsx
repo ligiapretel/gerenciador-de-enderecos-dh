@@ -22,7 +22,7 @@ function UsersScreen(){
         <>
             <Header title="Usuários cadastrados"/>
             <main className="main-users-screen">
-                {users.map(user=> (
+                {users.map(user=> 
                     <UserCard 
                         key={user.id}
                         id={user.id} 
@@ -30,7 +30,7 @@ function UsersScreen(){
                         email={user.email} 
                         addresses={user.addresses}
                     />
-                ))}
+                )}
             </main>
         </>
     )
