@@ -27,6 +27,3 @@ INSERT INTO addresses (postal_code, street, house_number, city, user_id) VALUES
 	('05522000', 'Rua das Margaridas', '123', 'Birigui', 1),
     ('03341100', 'Rua das Orquídeas', '780', 'Diadema', 2),
     ('02521100', 'Rua dos Cravos', '22', 'Guarapari', 3);
-    
-INSERT INTO addresses (postal_code, street, house_number, city, user_id) VALUES
-	('01122333', 'Rua Pitangueiras', '500', 'Lençóis', 1);
