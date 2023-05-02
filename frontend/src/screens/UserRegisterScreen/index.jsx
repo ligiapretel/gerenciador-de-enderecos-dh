@@ -1,25 +1,26 @@
 import { useState } from "react";
 import "./userRegisterScreen.css";
 import Header from "../../components/Header";
-import api from "../../api/api"
+import userServices from "../../services/userServices";
 
 function UserRegisterScreen(){
 
-    const [name, setName] = useState();
-    const [email, setEmail] = useState();
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
 
     async function handleSubmit(event){
         event.preventDefault();
 
-        await api.post("/users",{
-          name,
-          email,
-        })
-        
-        setName("");
-        setEmail("");
-        
-        alert("Usuário cadastrado")
+        try {
+          await userServices.createUser({name, email});
+          
+          setName("");
+          setEmail("");
+          
+          alert("Usuário cadastrado");          
+        } catch (error) {
+          console.log(error);
+        }
     }
    
     return (
